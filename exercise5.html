@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<style>
+.container {
+display : flex;
+flex-direction: row;
+gap: 10px;}
+.box {
+    height: 100px;
+    width: 100px;
+background-color: #2196F3;
+ 
+}
+
+
+@media (max-width: 900px) {
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+}
+
+@media (max-width: 600px) {
+.container {
+    display: grid;
+grid-template-columns: auto auto;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+display: grid;
+grid-template-columns: auto;
+}
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+</div>
+</body>
+</html>
